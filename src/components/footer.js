@@ -4,6 +4,42 @@ import instagram from "../images/instagram.svg";
 import twitter from "../images/twitter.svg";
 import linkedin from "../images/linkedin.svg";
 
+const Footer = () => {
+  return (
+    <Container>
+      <Column1>
+        <ContainerMenu>
+          <Menu>Home</Menu>
+          <Menu>Services</Menu>
+          <Menu>Our Works</Menu>
+          <Menu>Clients</Menu>
+          <Menu>Contact</Menu>
+        </ContainerMenu>
+      </Column1>
+      <Column2>
+        <ContainerMenu>
+          <TextColumn2>Edie</TextColumn2>
+          <ContainerImages>
+            <Image src={instagram} />
+            <Image src={twitter} />
+            <Image src={linkedin} />
+          </ContainerImages>
+        </ContainerMenu>
+      </Column2>
+      <Column3>
+        <TextColumn3>Want us to contact you?</TextColumn3>
+        <Input type="text" placeholder="Email" />
+        <Button>Join</Button>
+      </Column3>
+      <Name>
+        <MyName>Lorraine @ DevChallenges.io</MyName>
+      </Name>
+    </Container>
+  );
+};
+
+export default Footer;
+
 export const Container = styled.div`
   display: grid;
   grid-gap: 10px;
@@ -134,7 +170,7 @@ export const TextColumn3 = styled.p`
 
 export const Input = styled.input`
   width: 60%;
-  height: 57px;
+  height: 45px;
   left: 953px;
   top: 5529px;
   background: #f2f2f2;
@@ -151,12 +187,10 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
-  margin-left: -100px;
-
+  margin-left: -98px;
   width: 94px;
-  height: 49px;
-  left: 1205px;
-  top: 5533px;
+  height: 40px;
+
   background: #2d9cdb;
   border-radius: 12px;
   border: 0px;
@@ -168,39 +202,3 @@ export const Button = styled.button`
   line-height: 27px;
   color: #f2f2f2;
 `;
-
-const Footer = () => {
-  return (
-    <Container>
-      <Column1>
-        <ContainerMenu>
-          <Menu>Home</Menu>
-          <Menu>Services</Menu>
-          <Menu>Our Works</Menu>
-          <Menu>Clients</Menu>
-          <Menu>Contact</Menu>
-        </ContainerMenu>
-      </Column1>
-      <Column2>
-        <ContainerMenu>
-          <TextColumn2>Edie</TextColumn2>
-          <ContainerImages>
-            <Image src={instagram} />
-            <Image src={twitter} />
-            <Image src={linkedin} />
-          </ContainerImages>
-        </ContainerMenu>
-      </Column2>
-      <Column3>
-        <TextColumn3>Want us to contact you?</TextColumn3>
-        <Input type="text" placeholder="Email" />
-        <Button>Join</Button>
-      </Column3>
-      <Name>
-        <MyName>Lorraine @ DevChallenges.io</MyName>
-      </Name>
-    </Container>
-  );
-};
-
-export default Footer;

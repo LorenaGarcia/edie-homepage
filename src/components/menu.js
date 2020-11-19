@@ -1,6 +1,30 @@
 import React from "react";
 import styled from "styled-components";
 
+const Menu = () => {
+  return (
+    <Container>
+      <ContainerLeft>
+        <TitleLeft>Edie</TitleLeft>
+      </ContainerLeft>
+      <ContainerRigth>
+        <ContainerMenuMobile>
+          <i class="material-icons menu">menu</i>
+        </ContainerMenuMobile>
+        <ContainerList>
+          <List>Home</List>
+          <List>Services</List>
+          <List>Our Works</List>
+          <List>Clients</List>
+          <List>Contact</List>
+        </ContainerList>
+      </ContainerRigth>
+    </Container>
+  );
+};
+
+export default Menu;
+
 export const Container = styled.div`
   width: 100%;
   height: 60%;
@@ -10,12 +34,20 @@ export const ContainerLeft = styled.div`
   width: 40%;
   height: 100%;
   float: left;
+
+  @media (min-width: 481px) and (max-width: 1020px) {
+    width: 20%;
+  }
 `;
 
 export const ContainerRigth = styled.div`
   width: 60%;
   height: 100%;
   float: right;
+
+  @media (min-width: 481px) and (max-width: 1020px) {
+    width: 80%;
+  }
 `;
 
 export const TitleLeft = styled.div`
@@ -44,25 +76,20 @@ export const ContainerList = styled.ul`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 `;
 
-const Menu = () => {
-  return (
-    <Container>
-      <ContainerLeft>
-        <TitleLeft>Edie</TitleLeft>
-      </ContainerLeft>
-      <ContainerRigth>
-        <ContainerList>
-          <List>Home</List>
-          <List>Services</List>
-          <List>Our Works</List>
-          <List>Clients</List>
-          <List>Contact</List>
-        </ContainerList>
-      </ContainerRigth>
-    </Container>
-  );
-};
+export const ContainerMenuMobile = styled.div`
+  padding: 30px;
+  cursor: pointer;
+  display: none;
 
-export default Menu;
+  @media (max-width: 480px) {
+    display: block;
+    text-align: right;
+  }
+`;

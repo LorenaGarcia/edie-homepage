@@ -1,7 +1,33 @@
 import React from "react";
 import styled from "styled-components";
-import Footer from "./components/footer";
-import Menu from "./components/menu";
+import Footer from "./components/Footer";
+import Menu from "./components/Menu";
+import Introducction from "./components/Introduction";
+import Offer from "./components/Offer";
+
+const Home = () => {
+  return (
+    <Container>
+      <Header>
+        <Menu />
+      </Header>
+      <IntroductionContainer>
+        <Introducction />
+      </IntroductionContainer>
+      <OfferContainer>
+        <Offer />
+      </OfferContainer>
+      <GoodDesignContainer />
+      <TeamContainer />
+      <CommentContainer />
+      <FooterContainer>
+        <Footer />
+      </FooterContainer>
+    </Container>
+  );
+};
+
+export default Home;
 
 export const Container = styled.div`
   display: grid;
@@ -10,7 +36,6 @@ export const Container = styled.div`
 
 export const Header = styled.div`
   width: 100%;
-  height: 15vh;
   grid-column: 1 / 1;
   grid-row: 1 / 1;
 `;
@@ -62,23 +87,3 @@ export const FooterContainer = styled.div`
     height: 95vh;
   }
 `;
-
-const Home = () => {
-  return (
-    <Container>
-      <Header>
-        <Menu />
-      </Header>
-      <IntroductionContainer />
-      <OfferContainer />
-      <GoodDesignContainer />
-      <TeamContainer />
-      <CommentContainer />
-      <FooterContainer>
-        <Footer />
-      </FooterContainer>
-    </Container>
-  );
-};
-
-export default Home;
