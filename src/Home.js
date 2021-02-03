@@ -4,6 +4,8 @@ import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 import Introducction from "./components/Introduction";
 import Offer from "./components/Offer";
+import GoodDesign from "./components/GoodDesign";
+import Team from "./components/Team";
 
 const Home = () => {
   return (
@@ -17,8 +19,12 @@ const Home = () => {
       <OfferContainer>
         <Offer />
       </OfferContainer>
-      <GoodDesignContainer />
-      <TeamContainer />
+      <GoodDesignContainer>
+        <GoodDesign />
+      </GoodDesignContainer>
+      <TeamContainer>
+        <Team />
+      </TeamContainer>
       <CommentContainer />
       <FooterContainer>
         <Footer />
@@ -37,53 +43,49 @@ export const Container = styled.div`
 export const Header = styled.div`
   width: 100%;
   grid-column: 1 / 1;
-  grid-row: 1 / 1;
+  grid-row: 1 / 2;
 `;
 
 export const IntroductionContainer = styled.div`
   width: 100%;
-  height: 100vh;
   grid-column: 1 / 1;
-  grid-row: 2 / 2;
+  grid-row: 2 / 3;
 `;
 
 export const OfferContainer = styled.div`
   width: 100%;
-  height: 60vh;
   grid-column: 1 / 1;
-  grid-row: 3 / 3;
+  grid-row: 3 / 4;
 `;
 
 export const GoodDesignContainer = styled.div`
   width: 100%;
-  height: 120vh;
+  /* height: 120vh; */
   grid-column: 1 / 1;
-  grid-row: 4 / 4;
+  grid-row: 4 / 5;
 `;
 
 export const TeamContainer = styled.div`
   width: 100%;
-  height: 70vh;
   grid-column: 1 / 1;
-  grid-row: 5 / 5;
+  grid-row: 5 / 6;
+  margin-bottom: 100px;
 `;
 
 export const CommentContainer = styled.div`
   width: 100%;
-  height: 50vh;
   grid-column: 1 / 1;
-  grid-row: 6 / 6;
+  grid-row: 6 / 7;
 `;
 
 export const FooterContainer = styled.div`
   width: 100%;
-  height: 50vh;
   grid-column: 1 / 1;
-  grid-row: 7 / 7;
+  grid-row: 7 / 8;
 
   background-color: #100e1d;
 
   @media (max-width: 480px) {
-    height: 95vh;
+    height: 100vh;
   }
 `;

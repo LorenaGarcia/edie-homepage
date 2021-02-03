@@ -35,9 +35,9 @@ export const ContainerLeft = styled.div`
   height: 100%;
   float: left;
 
-  @media (min-width: 481px) and (max-width: 1020px) {
+  /* @media (min-width: 481px) and (max-width: 1020px) {
     width: 20%;
-  }
+  } */
 `;
 
 export const ContainerRigth = styled.div`
@@ -45,9 +45,9 @@ export const ContainerRigth = styled.div`
   height: 100%;
   float: right;
 
-  @media (min-width: 481px) and (max-width: 1020px) {
+  /* @media (min-width: 481px) and (max-width: 1020px) {
     width: 80%;
-  }
+  } */
 `;
 
 export const TitleLeft = styled.div`
@@ -81,6 +81,10 @@ export const ContainerList = styled.ul`
   @media (max-width: 480px) {
     display: none;
   }
+
+  @media (min-width: 481px) and (max-width: 950px) {
+    display: none;
+  }
 `;
 
 export const ContainerMenuMobile = styled.div`
@@ -89,6 +93,11 @@ export const ContainerMenuMobile = styled.div`
   display: none;
 
   @media (max-width: 480px) {
+    display: block;
+    text-align: right;
+  }
+
+  @media (min-width: 481px) and (max-width: 950px) {
     display: block;
     text-align: right;
   }

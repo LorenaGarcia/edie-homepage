@@ -62,7 +62,13 @@ export const DivText = styled.div`
   width: 80%;
   margin-left: 20%;
   margin-bottom: 20px;
+
   @media (max-width: 480px) {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  @media (min-width: 481px) and (max-width: 950px) {
     margin-left: 0px;
     width: 100%;
   }
@@ -74,6 +80,11 @@ export const DivStory = styled.div`
   margin-top: 42px;
 
   @media (max-width: 480px) {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  @media (min-width: 481px) and (max-width: 950px) {
     margin-left: 0px;
     width: 100%;
   }
