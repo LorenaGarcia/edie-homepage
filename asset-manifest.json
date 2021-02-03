@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/edie-homepage/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/edie-homepage/static/js/main.19c7f625.chunk.js",
+    "main.js.map": "/edie-homepage/static/js/main.19c7f625.chunk.js.map",
+    "runtime-main.js": "/edie-homepage/static/js/runtime-main.41610ff4.js",
+    "runtime-main.js.map": "/edie-homepage/static/js/runtime-main.41610ff4.js.map",
+    "static/js/2.261a084f.chunk.js": "/edie-homepage/static/js/2.261a084f.chunk.js",
+    "static/js/2.261a084f.chunk.js.map": "/edie-homepage/static/js/2.261a084f.chunk.js.map",
+    "index.html": "/edie-homepage/index.html",
+    "precache-manifest.a8a32540161fb11c9b42e1b3eb11d06c.js": "/edie-homepage/precache-manifest.a8a32540161fb11c9b42e1b3eb11d06c.js",
+    "service-worker.js": "/edie-homepage/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/edie-homepage/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.261a084f.chunk.js.LICENSE.txt": "/edie-homepage/static/js/2.261a084f.chunk.js.LICENSE.txt",
+    "static/media/booking.png": "/edie-homepage/static/media/booking.d16aefb3.png",
+    "static/media/heroImage.jpg": "/edie-homepage/static/media/heroImage.d6284741.jpg",
+    "static/media/instagram.svg": "/edie-homepage/static/media/instagram.18af0d38.svg",
+    "static/media/juice-product.png": "/edie-homepage/static/media/juice-product.096e56b1.png",
+    "static/media/linkedin.svg": "/edie-homepage/static/media/linkedin.4052ea9c.svg",
+    "static/media/onboard.png": "/edie-homepage/static/media/onboard.64ae8cff.png",
+    "static/media/person1.png": "/edie-homepage/static/media/person1.444a5442.png",
+    "static/media/person2.png": "/edie-homepage/static/media/person2.cab0dff6.png",
+    "static/media/person3.png": "/edie-homepage/static/media/person3.c28533f2.png",
+    "static/media/person4.png": "/edie-homepage/static/media/person4.b42c6136.png",
+    "static/media/smarthome.jpg": "/edie-homepage/static/media/smarthome.e0886190.jpg",
+    "static/media/twitter.svg": "/edie-homepage/static/media/twitter.5710b3e1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.41610ff4.js",
+    "static/js/2.261a084f.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.19c7f625.chunk.js"
+  ]
+}
